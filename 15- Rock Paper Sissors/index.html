@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Rock Paper Scissors</h1>
+    </nav>
+    <main>
+        <div class="score-panel">
+            <span class="tag user-tg">user</span>
+            <div class="score">
+                <span class="user">0</span>
+                :
+                <span class="comp">0</span>
+            </div>
+            <span class="tag comp-tg ">comp</span>
+        </div>
+        <h1>
+            <span class="userPlay">Rock</span>
+            <sub>user</sub>
+            <span class="beats-losses">beats</span>
+            to
+            <span class="compPlay">
+                Scissors
+            </span>
+            <sub>comp</sub>
+            <span class="status">
+                wait
+            </span>
+        </h1>
+        <section class="moves">
+            <button class="move move-static" id="0">
+                <img src="images/rock.png" alt="">
+            </button>
+            <button class="move move-static" id="1">
+                <img src="images/hand.png" alt="">
+            </button>
+            <button class="move move-static" id="2">
+                <img src="images/scissors.png" alt="">
+            </button>
+        </section>
+        <h2 class="game-notes">Make Your Move</h2>
+        <article>
+            <div class="move-container">
+                <button class="move-static" id="userResults">
+                    <img src="images/Play.png" alt="">
+                </button>
+                <span>Player</span>
+            </div>
+            <div class="move-container">
+                <button class="move-static" id="computerResults">
+                    <img src="images/Frame 1.png" alt="">
+                </button>
+                <span>Computer</span>
+            </div>
+        </article>
+    </main>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

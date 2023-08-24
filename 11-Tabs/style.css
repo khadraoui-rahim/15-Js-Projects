@@ -1,0 +1,170 @@
+body,
+html {
+    margin: 0;
+    width: 100%;
+    font-family: 'Open Sans';
+    min-height: 100vh;
+    background-color: hsl(210, 36%, 96%);
+}
+
+body,
+.title,
+.panel,
+.picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 45px 0;
+    width: 100%;
+}
+
+.title h1,
+.title p {
+    text-align: center;
+
+}
+
+.title h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: hsl(205, 86%, 17%);
+}
+
+.title p {
+    width: 78%;
+    margin: 10px;
+    font-size: .9rem;
+    color: hsl(209, 23%, 60%);
+}
+
+.panel {
+    width: 100%;
+}
+
+.panel .image {
+    background-image: url(hero-bcg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 90%;
+    height: 280px;
+    border-radius: 6px;
+    margin-bottom: 32px;
+}
+
+.picker {
+    max-width: 90%;
+    border-radius: 6px;
+    background-color: white;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.togglers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.togglers a {
+    font-size: 1.15rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.info {
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.info h4 {
+    margin: 10px 0;
+    color: hsl(205, 86%, 17%);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.info p {
+    color: hsl(210, 22%, 49%);
+    font-size: 1rem;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (width>980px) {
+    .panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1170px;
+        gap: 30px;
+    }
+
+    .title h1 {
+        font-size: 2.6rem;
+        margin-bottom: 0;
+        color: hsl(205, 86%, 17%);
+    }
+
+    .panel .image {
+        justify-self: flex-end;
+        height: 320px;
+        max-width: 570px;
+        align-self: flex-start;
+
+    }
+
+    .picker {
+        max-width: 100%;
+        margin-bottom: 0;
+        min-height: 320px;
+        align-self: flex-start;
+    }
+
+    .info h4 {
+        margin: 0px 0;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 1.15rem;
+        margin-top: 24px;
+    }
+
+    .info p {
+        font-size: 1.02rem;
+        line-height: 23px;
+    }
+}
+
+.togglers a {
+    background-color: hsl(212, 33%, 89%);
+    transition: .5s linear;
+}
+
+.togglers a:hover {
+    color: #49a6e9;
+    background-color: hsl(205, 100%, 96%);
+}
+
+.togglers .active {
+    background-color: white;
+}
+
+.togglers .active:hover {
+    background-color: white;
+    color: #222;
+}

@@ -1,0 +1,164 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    position: relative;
+    color: aliceblue;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg,
+.overlay {
+    position: relative;
+    top: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(99 124 147 / 35%) 0%, rgb(51 12 25 / 66%) 40%);
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.nav-center,
+nav,
+section {
+    z-index: 2;
+}
+
+.nav-center {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80px;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-center img {
+    width: 50px;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    font-family: 'roboto';
+    text-shadow: 0 2px 2px;
+}
+
+.nav-center ul {
+    display: flex;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    gap: 2.4rem;
+    justify-content: flex-end;
+    box-sizing: border-box;
+
+}
+
+section {
+    width: 65%;
+    text-align: center;
+    padding: 32vh 0;
+    padding-bottom: 15vh;
+    margin: auto;
+}
+
+section button {
+    margin: auto;
+    border: 2px solid white;
+    height: 40px;
+    width: 11rem;
+    background-color: transparent;
+    color: inherit;
+    font-size: 1rem;
+    font-family: inherit;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+section h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    width: 700px;
+    margin: auto;
+}
+
+
+article {
+    background-color: rgb(51, 12, 25);
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid gray;
+    font-size: 2rem;
+}
+
+article:nth-of-type(2n) {
+    background-color: rgba(240, 248, 255, 0.648);
+}
+
+article h1 {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 300;
+}
+
+article:nth-of-type(2n) h1 {
+    color: #222;
+}
+
+footer {
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(29, 29, 142);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0px 3px 21px -18px;
+}
